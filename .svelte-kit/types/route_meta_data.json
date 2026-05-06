@@ -1,0 +1,14 @@
+{
+	"/": [
+		"src/routes/+page.ts"
+	],
+	"/onskeliste": [
+		"src/routes/onskeliste/+page.ts"
+	],
+	"/praktisk": [
+		"src/routes/praktisk/+page.ts"
+	],
+	"/program": [
+		"src/routes/program/+page.ts"
+	]
+}
