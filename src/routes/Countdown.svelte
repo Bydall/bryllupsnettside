@@ -26,7 +26,7 @@
 <style>	
 	h1 {
 		width: 100%;
-		font-family: 'Cookie';
+		font-family: 'Waterfall';
 	}
 
 

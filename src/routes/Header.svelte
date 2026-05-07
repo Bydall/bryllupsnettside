@@ -67,7 +67,7 @@
 	}
 
 	.middle a {
-		font-family: 'Cookie';
+		font-family: 'Waterfall';
 		font-weight:normal;
     	font-size: 2.2rem;
     	text-decoration: none;
