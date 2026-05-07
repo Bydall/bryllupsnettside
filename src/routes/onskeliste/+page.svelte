@@ -13,7 +13,7 @@
 	
 
 	<div class="lists">
-	<a class="onsk" href="https://onskeskyen.no/nb/wishlists/Rfu9e9tOmgLqW1Dc?sharedBy=EunZl6BQE0TgmFJE&utm_source=shortlink&utm_id=ep3xhn"> Ønskeskyen </a>
+	<a class="vipps" href="https://qr.vipps.no/wish-list/940b0303-2db4-478d-f92b-08deaa80665d"> Vipps </a>
 	<a class="christiania" href="https://www.cg.no/apps/giftregistry/registry/414094?_r=1&utm_source=gift_reggie&utm_medium=gift_reggie&utm_campaign=gift_reggie&utm_content=414094"> Christiania Glassmagasin </a>
 	<a class="kitchn" href="https://www.kitchn.no/onskeliste/241866/"> Kitchn </a>
 
@@ -41,9 +41,9 @@ a {
 
 } 
 
-.onsk {
+.vipps {
 
-	background-color: rgb(5, 154, 190);
+	background-color: rgb(255 91 36);
 	color: rgb(255, 255, 255);
 
 }
