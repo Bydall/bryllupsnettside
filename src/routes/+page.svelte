@@ -9,20 +9,18 @@
 	<meta name="description" content="Home Page" />
 </svelte:head>
 
-<section>
-
+	<div class="countdown">
 	<Countdown/>
-
-</section>
-
+</div>
 <style>
-	section {
+	.countdown {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 0.3;
 		margin: 0;
+		
 	}
 
 

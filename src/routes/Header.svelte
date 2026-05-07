@@ -23,16 +23,16 @@
 	 <div class:active={open} class="links">
 		<ul>
 			<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-				<a href={resolve('/')} on:click={closeMenu}>Hjem</a>
+				<a href="#mainpage" on:click={closeMenu}>Hjem</a>
 			</li>
 			<li aria-current={page.url.pathname === '/program' ? 'page' : undefined}>
-				<a href={resolve('/program')} on:click={closeMenu}>Program</a>
+				<a href="#Program" on:click={closeMenu}>Program</a>
 			</li>
 			<li aria-current={page.url.pathname === '/praktisk' ? 'page' : undefined}>
-				<a href={resolve('/praktisk')} on:click={closeMenu}>Praktisk Info</a>
+				<a href="#Praktisk" on:click={closeMenu}>Praktisk Info</a>
 			</li>
 			<li aria-current={page.url.pathname === '/onskeliste' ? 'page' : undefined}>
-				<a href={resolve('/onskeliste')} on:click={closeMenu}>Ønskelister</a>
+				<a href="#Onskeliste" on:click={closeMenu}>Ønskelister</a>
 			</li>
 		</ul>
 	</div>	

@@ -7,6 +7,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
+<section id="Onskeliste">
 <div class="text-column">
 
 	<h1>Ønskelister</h1>
@@ -20,12 +21,13 @@
 	</div>
 
 </div>
-
+</section>
 
 <style>
 
 h1{
 	margin: 0;
+	text-align: left;
 }
 
 a {
@@ -37,9 +39,21 @@ a {
 	padding: .5rem 1rem;
 	border: none;
     border-radius: 5px;
-    cursor: pointer
+    cursor: pointer;
+	width: 40%;
 
 } 
+
+.lists{
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 1rem;
+	width: 100%;
+
+}
+
 
 .vipps {
 
@@ -70,7 +84,7 @@ a {
 
 @media (max-width: 768px) {
 
-	a{
+	a {
 	text-align: center;
 	font-size: 1rem;
 	display: flex;
@@ -83,13 +97,16 @@ a {
     cursor: pointer
 
 	}
+	
 
 
 .lists{
-	display: flex;
+	display: column;
 	justify-content: center;
 	flex-direction: row;
 	margin: 1rem;
+	width: 100%;
+
 }
 
 h1{

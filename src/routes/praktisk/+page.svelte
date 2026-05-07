@@ -8,6 +8,7 @@
 	<meta name="description" content="Praktisk Info" />
 </svelte:head>
 
+<section id="Praktisk">
 <div class="text-column">
 
 	<h1> Praktisk info</h1>
@@ -19,14 +20,26 @@
 	
 
 </div>
+</section>
+
 <style>
 
 
-	
+	h1{
+		text-align: left;
+	}
 	p{
-		text-align: center;
+		text-align: left;
 		line-height: 2rem;
 		padding: 0;
+	}
+
+	#Praktisk{
+		padding: 15px;
+		position: relative;
+		max-width: 1100px;
+		box-sizing: border-box;
+		margin: 0px auto;
 	}
 
 	@media (max-width: 480px) {
@@ -38,7 +51,7 @@
 		width: 100%;
 }
 h1{
-	padding: 0 ;
+	padding: 0;
 }
 
 	}

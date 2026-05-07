@@ -1,5 +1,8 @@
 <script lang="ts">
 	import Header from './Header.svelte';
+	import Program from './program/+page.svelte'
+	import Praktisk from './praktisk/+page.svelte'
+	import Onskeliste from './onskeliste/+page.svelte'
 	import './layout.css';
 
 	let { children } = $props();
@@ -15,18 +18,25 @@
 
 </script>
 
-<div class="app" >
+<section id="mainpage" >
 	<Header {open} {toggleMenu} {closeMenu} />
 	<main class="app" class:shifted={open}>{@render children()}</main>
+</section>
+ 
+	<Program/>
+	<Praktisk/>
+	<Onskeliste/>
 
 
-</div>
 
 <style>
-	.app {
+	#mainpage {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		background-image: url("../lib/images/MathildeOgHavard.jpg");
+		background-size: cover;
+		background-position:center;
 	}
 
 	main {
