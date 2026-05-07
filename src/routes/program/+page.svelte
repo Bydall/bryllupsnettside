@@ -1,6 +1,6 @@
 <script lang="ts">
 	
-
+import bilde from '$lib/images/bakgrunnsbilde.jpg';
 </script>
 
 <svelte:head>
@@ -19,8 +19,7 @@
 <div class="heia">
 
 	<div class="vb">
-		<div class="vielsebilde">
-		</div>
+		<div class="vielsebilde"></div>
 	</div>
 	
 	<div class="vielse">
@@ -33,6 +32,25 @@
 		<br>
 		<p> Sauråsbakken 20, 5131 Bergen, Norge</p>
 	</div>
+</div>
+
+
+<div class="heia">
+
+		<div class="vielse">
+				<h3>Festen</h3>
+				<br>
+				<br>
+				<h4> 25 juli 2026</h4>
+				<br>
+				<h4> Kl 15:30 - 01:00</h4>
+				<br>
+				<p> Olderkjerret 6, 5108 Hordvik, Norge</p>
+			</div>
+	<div class="vb">
+		<div class="festbilde"></div>
+	</div>
+
 </div>
 
 
@@ -64,6 +82,7 @@
 	.heia{
 		display: flex;
 		width: 100%;
+		padding: 15px;
 	}
 	
 	.vb{
@@ -71,9 +90,11 @@
 		padding: 15px;
 	}
 	.vielsebilde{
-		background-image: url("../../lib/images/bakgrunnsbilde.jpg");
+		height: 100%;
+		width: 100%;
 		background-size: cover;
 		background-position: center center;
+		background-image: url("../../lib/images/bakgrunnsbilde.jpg");
 		
 	}
 
@@ -83,5 +104,13 @@
 		justify-content: center;
 		padding-bottom: 15px;
 		text-align: center;
+	}
+
+	.festbilde{
+height: 100%;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-image: url("../../lib/images/bryllupsfest.jpg");
 	}
 </style>
