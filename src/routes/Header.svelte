@@ -78,6 +78,10 @@
 		display: block;
 	}
 
+	.links a{
+		font-family: 'Mali';
+	}
+
 	
 	nav {
 		display: flex;
