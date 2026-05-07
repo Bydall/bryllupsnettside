@@ -13,9 +13,9 @@
 	
 
 	<div class="lists">
-	<a class="vipps" href="https://qr.vipps.no/wish-list/940b0303-2db4-478d-f92b-08deaa80665d"> Vipps </a>
-	<a class="christiania" href="https://www.cg.no/apps/giftregistry/registry/414094?_r=1&utm_source=gift_reggie&utm_medium=gift_reggie&utm_campaign=gift_reggie&utm_content=414094"> Christiania Glassmagasin </a>
-	<a class="kitchn" href="https://www.kitchn.no/onskeliste/241866/"> Kitchn </a>
+	<a class="vipps" href="https://qr.vipps.no/wish-list/940b0303-2db4-478d-f92b-08deaa80665d" target="_blank" rel="noopener noreferrer"> Vipps </a>
+	<a class="christiania" href="https://www.cg.no/apps/giftregistry/registry/414094?_r=1&utm_source=gift_reggie&utm_medium=gift_reggie&utm_campaign=gift_reggie&utm_content=414094" target="_blank" rel="noopener noreferrer"> Christiania Glassmagasin </a>
+	<a class="kitchn" href="https://www.kitchn.no/onskeliste/241866/" target="_blank" rel="noopener noreferrer"> Kitchn </a>
 
 	</div>
 

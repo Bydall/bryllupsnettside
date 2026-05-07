@@ -79,7 +79,8 @@
 	}
 
 	.links a{
-		font-family: 'Mali';
+		font-family: 'Klee 1';
+		font-weight: bolder;
 	}
 
 	
