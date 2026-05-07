@@ -22,10 +22,7 @@
 <style>
 
 
-	h1{
-		font-family: 'Amatic SC';
-	}
-
+	
 	p{
 		text-align: center;
 		line-height: 2rem;
