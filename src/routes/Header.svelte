@@ -67,7 +67,7 @@
 	}
 
 	.middle a {
-		font-family: 'Amatic SC';
+		font-family: 'Cookie';
 		font-weight:normal;
     	font-size: 2.2rem;
     	text-decoration: none;
@@ -80,7 +80,6 @@
 
 	.links a{
 		font-family: 'Klee 1';
-		font-weight: bolder;
 	}
 
 	
