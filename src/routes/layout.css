@@ -19,6 +19,9 @@
 	color: var(--color-text);
 }
 
+html{
+	scroll-behavior:smooth;
+}
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -32,6 +35,7 @@ h2,
 p {
 	font-weight: 400;
 	font-family: 'Waterfall';
+	color: rgb(0,51,25)
 }
 
 p {
@@ -73,12 +77,22 @@ pre {
 
 
 #Program, #Praktisk, #Onskeliste{
-		padding: 15px;
 		position: relative;
 		max-width: 1100px;
 		box-sizing: border-box;
 		margin: 0px auto;
+		display: block;
 }
+.heia{
+		display: flex;
+		width: 100%;
+		
+	}
+	.vb{
+		width: 50%;
+		padding: 15px;
+	}
+
 
 input,
 button {
@@ -91,15 +105,34 @@ button:focus:not(:focus-visible) {
 }
 
 
-@media (max-width: 768px) {
-	.text-column {
-		display:block;
-		max-width: 100%;
-		justify-content: start;
-		margin: 0;
-}
-	
-}
+@media(max-width: 576px){
+		
+		h1, h3, h4{
+			font-size: 1.7rem;
+		}
+			p{
+				font-size:1.5rem
+		}
+	}
+		
+		@media(min-width: 576px) and (max-width: 768px){
+			h1,h3,h4{
+				font-size: 2rem;
+			}
+			p{
+				font-size: 1.7rem;
+			}
+		}
+
+		@media(min-width: 768px) and (max-width: 992px){
+
+			h1,h3,h4{
+				font-size: 2.5rem;
+			}
+			p{
+				font-size: 2rem;
+			}
+		}
 
 .visually-hidden {
 	border: 0;

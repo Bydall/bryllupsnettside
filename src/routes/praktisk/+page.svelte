@@ -13,10 +13,20 @@
 
 	<h1> Praktisk info</h1>
 
-	<p> Vielse i Åsane Gamle Kirke kl. 14:00 </p>
+<div class="heia">
 
-	<p> Bryllupsfest på Hordvik Bedehus kl. 17:00 </p>
+	<div class="vb">
+		<div class="hotellrombilde"></div>
+	</div>
 	
+	<div class="hotellrom">
+		<h3>Reise og overnatting</h3>
+		<br>
+		<p class="hotellromtekst"> Det er mulighet for overnatting på hotellene i Bergen sentrum. 
+			<br>
+			For dem som vil litt utenfor sentrum så er Clarion Hotell Edvard Grieg, på Sandsli, et veldig bra alternativ. </p>
+	</div>
+</div>
 	
 
 </div>
@@ -41,6 +51,52 @@
 		box-sizing: border-box;
 		margin: 0px auto;
 	}
+
+	h1 {
+		text-align: left;
+		
+	}
+
+	h3{
+	font-size: 3rem;
+	display: inline-block;
+	}
+	h4{
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		font-size: 2rem;
+		
+		
+	}
+
+	.hotellrom{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		text-align: center;
+	}
+
+	.hotellrombilde{
+		width: 100%;
+		padding-top: 70%;
+		position: relative;
+		background-size: cover;
+		background-position: center 30%;
+		background-image: url("../../lib/images/hotellrom.jpg");
+		
+
+	}
+	.hotellromtekst{
+		text-align: left;
+	}
+
 
 	@media (max-width: 480px) {
 

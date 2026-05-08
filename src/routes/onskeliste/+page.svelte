@@ -12,13 +12,17 @@
 
 	<h1>Ønskelister</h1>
 	
-
 	<div class="lists">
 	<a class="vipps" href="https://qr.vipps.no/wish-list/940b0303-2db4-478d-f92b-08deaa80665d" target="_blank" rel="noopener noreferrer"> Vipps </a>
 	<a class="christiania" href="https://www.cg.no/apps/giftregistry/registry/414094?_r=1&utm_source=gift_reggie&utm_medium=gift_reggie&utm_campaign=gift_reggie&utm_content=414094" target="_blank" rel="noopener noreferrer"> Christiania Glassmagasin </a>
 	<a class="kitchn" href="https://www.kitchn.no/onskeliste/241866/" target="_blank" rel="noopener noreferrer"> Kitchn </a>
 
 	</div>
+
+	<p> Hvis du vil gi en pengegave, så kan det gjøres til kontonummer: 3000 90 05915 (Merk med navn)</p>
+
+
+	
 
 </div>
 </section>
@@ -28,6 +32,10 @@
 h1{
 	margin: 0;
 	text-align: left;
+}
+
+p{
+	margin: 0 auto;
 }
 
 a {
@@ -55,7 +63,7 @@ a {
 }
 
 
-.vipps {
+.vipps{
 
 	background-color: rgb(255 91 36);
 	color: rgb(255, 255, 255);
@@ -65,6 +73,8 @@ a {
 .christiania{
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
+	border: .2px solid black;
+
 }
 
 .kitchn {
@@ -85,7 +95,7 @@ a {
 @media (max-width: 768px) {
 
 	a {
-	text-align: center;
+	justify-content: center;
 	font-size: 1rem;
 	display: flex;
 	align-items: center;
@@ -94,7 +104,8 @@ a {
 	padding: 0 .4rem 0 .4rem;
 	border: none;
     border-radius: 5px;
-    cursor: pointer
+    cursor: pointer;
+	width: 100%;
 
 	}
 	

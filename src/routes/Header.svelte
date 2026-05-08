@@ -9,16 +9,22 @@
 </script>
 
 <header>
+
+	<div class="something">
 	
 	<nav>
 
-	<button class="hamburger" on:click={toggleMenu}>
-		{#if open}
-		 ✕
-		{:else}
-		  ☰
-		{/if}
-	</button>
+	<div class="hamnav">
+	<div class="hamburger">
+		<button class="hambtn" on:click={toggleMenu}>
+			{#if open}
+			✕
+			{:else}
+			☰
+			{/if}
+		</button>
+	</div>
+
 
 	 <div class:active={open} class="links">
 		<ul>
@@ -37,6 +43,7 @@
 		</ul>
 	</div>	
 	
+	</div>
 		
 	<div class:shifted={open} class="middle">
 		<a href={resolve('/')}>
@@ -44,16 +51,16 @@
 		</a>
 	</div>
 
-	<div>
-		<i class="fa-solid fa-plus" aria-hidden="true"></i>
-	</div>
-
 	</nav>
-
+</div>
 	
 </header>
 
 <style>
+
+.something{
+	margin:	0 auto;
+}
 	header {
 		
 		padding: 1rem;
@@ -61,9 +68,14 @@
 		
 		
 	}
+	.hamnav{
+		align-items: center;
+	}
 
-	.middle {
-		margin: auto;
+	.middle{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.middle a {
@@ -72,6 +84,7 @@
     	font-size: 2.2rem;
     	text-decoration: none;
 		text-transform: none;
+		text-align: left;
 	}
 
 	.links{
@@ -86,8 +99,9 @@
 	nav {
 		display: flex;
 		align-items: center;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0 auto;
+		padding: 15px;
+		width: 100%;
 	
 	
 	}
@@ -117,7 +131,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
-		color: var(--color-text);
+		color: rgb(0,51,25);
 		font-family: 'Cookie';
 		font-weight: normal;
 		font-size: 1.2rem;
@@ -133,21 +147,12 @@
 		color: var(--color-theme-1);
 	}
 
-	.hamburger{
+	.hambtn{
 		font-size: 1.2rem;
 		display:none;
 	}
 
-	@media(max-width: 1100px){
-
-		nav {
-		display: flex;
-		align-items: center;
-		display: grid;
-		grid-template-columns: .5fr 5fr;
-	
-	
-	}
+	@media(max-width: 1300px){
 
 	ul{
 		padding: 7rem 1rem;
@@ -158,10 +163,18 @@
 		height: auto;
 	}
 	
-	
 	.hamburger{
+		position: relative;
+		z-index: 1002;
+	}
+	
+	.hambtn{
 		display: block;
 		z-index: 1001;
+	}
+
+	nav {
+		width: 100%;
 	}
 
 	.links{
@@ -185,18 +198,79 @@
 		}
 
 	.middle{
-		justify-content: center;
+		width: 75%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 
-	}
-
+	} 
 	.middle.shifted{
-		transform: translateX(0%);
+		transform: translateX(-50%);
 	}
+
+	
 	.middle a{
 		font-size: 2rem;
+		justify-content: center;
 	}
 	
 
 	}
+	@media(min-width: 768px)and (max-width:1300px){
+
+		.middle a{
+		font-size: 3rem;
+		}
+
+		ul {
+			padding-top: 8rem;
+		}
+
+		li{
+			padding: .2rem;
+		}
+
+		.hambtn{
+			font-size: 2.5rem;
+		}
+
+		
+	}
+	@media(max-width: 400px){
+
+		.hambtn{
+			font-size: 1.2rem;
+		}
+		ul{
+			padding: 6rem 1rem;
+		}
+		nav a{
+			font-size: 1rem;
+		}
+
+	}
+
+
+	@media(max-width: 320px){
+
+		ul{
+			padding: 5.2rem 1rem;
+		}
+
+		li{
+			padding: .1rem;
+		}
+		.middle a {
+			font-size: 1.7rem;
+	}
+
+	.hambtn{
+		font-size: .7rem;
+	}
+	.links a {
+		font-size: .7rem;
+	}
+}
+
 
 </style>
