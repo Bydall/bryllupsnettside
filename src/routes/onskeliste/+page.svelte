@@ -44,14 +44,15 @@
 }
 
 h1{
-	text-align: left;
+	text-align: center;
+	width: 25%;
 }
 
 p{
 	text-align: center;
 	margin: 0 auto;
 	color: rgb(255,255,255);
-	font-size: 28.8px;
+	font-size: 24px;
 	
 }
 
@@ -61,7 +62,7 @@ a {
 	font-size: 1.2rem;
 	display: block;
 	margin: 2rem;
-	padding: 2rem 1rem;
+	padding: 1rem 1rem;
 	border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -114,7 +115,14 @@ a {
 
 .gavetekst{
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
+	width: 100vw;
+	height: 25%;
+	
+	position: absolute;
+	bottom:0;
+	left:0;
+	display: flex;
+	align-items: center;
 	
 	}
 
@@ -122,8 +130,8 @@ a {
 
 	
 	.text-column{
-		padding-top: 20px;
-		margin-bottom: 20px;
+		padding-top: 120px;
+		margin-bottom: 140px;
 	}
 	
 	a{
@@ -145,12 +153,12 @@ a {
 
 	
 	.text-column{
-		padding-top: 20px;
-		margin-bottom: 70px;
+		padding-top: 120px;
+		margin-bottom: 240px;
 	}
 	
 	a{
-		margin:10px;
+		margin:20px;
 		padding: 20px;
 		width: 25%;
 		font-size: 16.2px;
@@ -169,7 +177,7 @@ a {
 		
 		.lists{
 			margin:0px;
-			margin-top: 30px;
+			margin-top: 70px;
 			align-items: center;
 			flex-direction: row;
 			
@@ -189,7 +197,12 @@ a {
 
 		.text-column{
 			padding: 15px;
-			margin-bottom: 230px;
+			margin-top: 140px;
+			margin-bottom: 270px;
+		}
+
+		.christiania{
+			padding:10.98px;
 		}
 
 		.gavetekst{

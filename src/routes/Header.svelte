@@ -6,6 +6,7 @@
 	export let toggleMenu: () => void;
 	export let closeMenu: () => void;
 
+
 </script>
 
 <header>
@@ -32,16 +33,16 @@
 				<a href="#mainpage" on:click={closeMenu}>Hjem</a>
 			</li>
 			<li aria-current={page.url.pathname === '/program' ? 'page' : undefined}>
-				<a href="#Program" on:click={closeMenu}>Program</a>
+				<a href="#Program"  on:click={closeMenu}>Program</a>
 			</li>
 			<li aria-current={page.url.pathname === '/praktisk' ? 'page' : undefined}>
-				<a href="#Praktisk" on:click={closeMenu}>Praktisk Info</a>
+				<a href="#Praktisk" id="praktiskId" on:click={closeMenu}>Praktisk Info</a>
 			</li>
 			<li aria-current={page.url.pathname === '/historie' ? 'page' : undefined}>
-				<a href="#Historie" on:click={closeMenu}>Vår Historie</a>
+				<a href="#Historie" id="historieId" on:click={closeMenu}>Vår Historie</a>
 			</li>
 			<li aria-current={page.url.pathname === '/onskeliste' ? 'page' : undefined}>
-				<a href="#Onskeliste" on:click={closeMenu}>Ønskelister</a>
+				<a href="#Onskeliste" id="onskId" on:click={closeMenu}>Ønskelister</a>
 			</li>
 		</ul>
 	</div>	
@@ -83,11 +84,9 @@
 
 	.middle a {
 		font-family: 'Alex Brush';
-		font-weight:normal;
-    	font-size: 60px;
-    	text-decoration: none;
-		text-transform: none;
-		text-align: left;
+		font-size: 36px;
+		justify-content: center;
+
 	}
 
 	.links{
@@ -111,7 +110,6 @@
 		height: 3em;
 		display: flex;
 		justify-content: center;
-		align-items: center;
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
@@ -148,10 +146,11 @@
 		display:none;
 	}
 
-	@media (max-width: 1900px){
 
 	ul{
 		padding: 200px 20px;
+		margin:7px;
+		margin-top: 15px;
 		flex-direction: column;
 	}
 
@@ -168,7 +167,7 @@
 	.hambtn{
 		display: block;
 		z-index: 1001;
-		font-size: 40px;
+		font-size: 28px;
 	}
 
 	nav {
@@ -176,7 +175,7 @@
 	}
 
 	nav a {
-		font-size: 25px;
+		font-size: 16px;
 	}
 
 	.links{
@@ -184,7 +183,7 @@
 		top: 0;
 		left: 0;
 		height: 100vh;
-		background-color: rgba(185, 193, 204, 0.5);
+		background-color: rgba(185, 193, 204,0.5);
 		flex-direction: column;
 		display: none;
 		transform: translateX(-100%);
@@ -211,18 +210,14 @@
 	}
 
 	
-	.middle a{
-		font-size: 60px;
-		justify-content: center;
-
-	}
+	
 	
 
-	}
+	
 	@media(min-width: 768px)and (max-width:992px){
 
 		.middle a{
-		font-size: 48px;
+		font-size: 32px;
 		}
 
 		ul {
@@ -243,15 +238,15 @@
 	@media(min-width: 576px)and (max-width:767px){
 
 		ul{
-			padding:125px 16px;
+			padding:160px 16px;
 		}
 		
 		li{
-			padding: 5px;
+			padding: 9px;
 		}
 
 		.middle a {
-			font-size: 40px;
+			font-size: 32px;
 		}
 
 	}
@@ -259,23 +254,33 @@
 	@media(max-width: 576px){
 
 		ul{
-				padding: 110px 16px;
+				padding: 150px 16px;
 			}
 
 			li{
-				padding: 7px;
+				padding: 9px;
 			}
 			
+			
 		.hambtn{
-			font-size: 12.8px;
+			align-items: center;
+			font-size: 22px;
 		}
 		.links a {
 			font-size: 12.8px;
 		}
 
-		.middle a{
-			font-size: 22px;
+		.middle{
+			position: relative;
+			width: 100%;
 		}
+
+		.middle a{
+			padding: 0px;
+			text-align: left;
+			font-size: 24px;
+		}
+
 }
 
 

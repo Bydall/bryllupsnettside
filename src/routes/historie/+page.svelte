@@ -11,7 +11,7 @@
 <section id="Historie">
 <div class="text-column">
 
-	<h1> Vår historie</h1>
+	<h1> Vår Historie</h1>
 
 <div class="heia">
 
@@ -37,10 +37,11 @@
 
 <style>
 
-.heia{
-	flex-wrap: wrap;
-
+.text-column{
+	display: flex;
+	align-items: center;
 }
+
 
 .vb{
 	width: 100%;
@@ -61,6 +62,7 @@
 	}
 
 	h1 {
+		padding: 15px;
 		text-align: left;
 		
 	}
@@ -97,7 +99,7 @@
 
 	.historiebilde{
 		width: 100%;
-		padding-top: 70%;
+		padding-top: 100%;
 		position: relative;
 		background-size: cover;
 		background-position: center 25%;

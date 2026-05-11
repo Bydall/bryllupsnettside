@@ -27,24 +27,24 @@
 	h1 {
 		width: 100%;
 		font-family: 'Alex Brush';
-		font-size: 50px;
+		font-size: 32px;
 	}
 
 	@media(min-width: 768px) and (max-width:992px){
 		h1{
-			font-size: 42px;
+			font-size: 28px;
 		}
 		
 	}
 	@media(min-width: 576px) and (max-width:768px){
 		h1{
-			font-size: 36px;
+			font-size: 28px;
 		}
 	}
 
 	@media(max-width:576px){
 		h1{
-			font-size: 14.4px;
+			font-size: 20px;
 		}
 	}
 

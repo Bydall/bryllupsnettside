@@ -66,7 +66,9 @@
 		margin: 0px auto;
 	}
 
+
 	h1 {
+		padding: 15px;
 		text-align: left;
 		
 	}
@@ -74,7 +76,6 @@
 	h3{
 	font-size: 36px;
 	display: inline-block;
-	padding-right: 50px;
 	}
 
 	p {
@@ -88,10 +89,8 @@
 		width: 50%;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
 		padding: 15px;
-		text-align: center;
 	}
 
 	.hotellrombilde{
@@ -113,7 +112,6 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 15px;
-		text-align: center;
 	}
 
 	.transport{
