@@ -19,23 +19,40 @@
 
 	</div>
 
-	<p> Hvis du vil gi en pengegave, så kan det gjøres til kontonummer: 3000 90 05915 (Merk med navn)</p>
-
-
-	
-
 </div>
+
+
+<div class="gavetekst">
+
+	<p> Hvis du vil gi en pengegave, så kan det gjøres til kontonummer: <br> 3000 90 05915 (Merk med navn)</p>
+
+	</div>
+
 </section>
 
 <style>
 
+#Onskeliste{
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		background-image: url("../../lib/images/footer_image.jpg");
+		background-size: cover;
+		background-position:center 70%;
+		padding: 15px;
+}
+
 h1{
-	margin: 0;
 	text-align: left;
 }
 
 p{
+	text-align: center;
 	margin: 0 auto;
+	color: rgb(255,255,255);
+	font-size: 28.8px;
+	
 }
 
 a {
@@ -43,12 +60,13 @@ a {
 	text-align: center;
 	font-size: 1.2rem;
 	display: block;
-	margin: 1rem;
-	padding: .5rem 1rem;
+	margin: 2rem;
+	padding: 2rem 1rem;
 	border: none;
     border-radius: 5px;
     cursor: pointer;
-	width: 40%;
+	width: 20%;
+	height: 100%;
 
 } 
 
@@ -56,7 +74,7 @@ a {
 	
 	display: flex;
 	justify-content: center;
-	flex-direction: row;
+	flex-direction: column;
 	margin: 1rem;
 	width: 100%;
 
@@ -86,45 +104,107 @@ a {
 
 	display:flex;
 	flex-direction: column;
-	padding: .3rem;
+	margin: 0px auto;
+	padding-top: 100px;
+	padding-left: 15px;
 	width: 100%;
 	
 
 }
 
-@media (max-width: 768px) {
-
-	a {
-	justify-content: center;
-	font-size: 1rem;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	margin: 1rem;
-	padding: 0 .4rem 0 .4rem;
-	border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.gavetekst{
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
-
-	}
-	
-
-
-.lists{
-	display: column;
-	justify-content: center;
-	flex-direction: row;
-	margin: 1rem;
-	width: 100%;
-
-}
-
-h1{
-	justify-content: center;
-}
 	
 	}
+
+ @media (min-width: 768px) and (max-width: 992px) {
+
+	
+	.text-column{
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	a{
+		margin:20px;
+		padding: 20px;
+		width: 20%;
+		font-size: 16.2px;
+		text-align: center;
+	}
+
+
+	p{
+		font-size: 16.2px;
+	}
+
+ }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+
+	
+	.text-column{
+		padding-top: 20px;
+		margin-bottom: 70px;
+	}
+	
+	a{
+		margin:10px;
+		padding: 20px;
+		width: 25%;
+		font-size: 16.2px;
+		text-align: center;
+	}
+
+
+	p{
+		font-size: 16.2px;
+	}
+
+ }
+
+
+	@media (max-width: 576px) {
+		
+		.lists{
+			margin:0px;
+			margin-top: 30px;
+			align-items: center;
+			flex-direction: row;
+			
+
+		}
+		a{
+			flex: 1;
+			padding: 20px;
+			margin: 10px;
+			border: none;
+    		border-radius: 5px;
+    		cursor: pointer;
+			width: 100%;
+			font-size: 12.8px;
+
+		}
+
+		.text-column{
+			padding: 15px;
+			margin-bottom: 230px;
+		}
+
+		.gavetekst{
+			margin-top: 20px;
+		}
+		h1{
+			align-items: left;
+		}
+		p{
+				
+			font-size: 12.8px;
+			text-align: center;
+		}
+	}
+
 
 
 </style>

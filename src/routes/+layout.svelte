@@ -2,6 +2,7 @@
 	import Header from './Header.svelte';
 	import Program from './program/+page.svelte'
 	import Praktisk from './praktisk/+page.svelte'
+	import Historie from './historie/+page.svelte'
 	import Onskeliste from './onskeliste/+page.svelte'
 	import './layout.css';
 
@@ -25,6 +26,7 @@
  
 	<Program/>
 	<Praktisk/>
+	<Historie/>
 	<Onskeliste/>
 
 

@@ -37,6 +37,9 @@
 			<li aria-current={page.url.pathname === '/praktisk' ? 'page' : undefined}>
 				<a href="#Praktisk" on:click={closeMenu}>Praktisk Info</a>
 			</li>
+			<li aria-current={page.url.pathname === '/historie' ? 'page' : undefined}>
+				<a href="#Historie" on:click={closeMenu}>Vår Historie</a>
+			</li>
 			<li aria-current={page.url.pathname === '/onskeliste' ? 'page' : undefined}>
 				<a href="#Onskeliste" on:click={closeMenu}>Ønskelister</a>
 			</li>
@@ -79,9 +82,9 @@
 	}
 
 	.middle a {
-		font-family: 'Waterfall';
+		font-family: 'Alex Brush';
 		font-weight:normal;
-    	font-size: 2.2rem;
+    	font-size: 60px;
     	text-decoration: none;
 		text-transform: none;
 		text-align: left;
@@ -90,11 +93,6 @@
 	.links{
 		display: block;
 	}
-
-	.links a{
-		font-family: 'Klee 1';
-	}
-
 	
 	nav {
 		display: flex;
@@ -117,6 +115,7 @@
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
+
 	}
 
 	li {
@@ -131,15 +130,12 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
-		color: rgb(0,51,25);
-		font-family: 'Cookie';
 		font-weight: normal;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		text-transform: none;
-		
 		transition: color 0.2s linear;
 	}
 
@@ -152,15 +148,16 @@
 		display:none;
 	}
 
-	@media(max-width: 1300px){
+	@media (max-width: 1900px){
 
 	ul{
-		padding: 7rem 1rem;
+		padding: 200px 20px;
 		flex-direction: column;
 	}
 
 	li{
 		height: auto;
+		padding: 15px;
 	}
 	
 	.hamburger{
@@ -171,10 +168,15 @@
 	.hambtn{
 		display: block;
 		z-index: 1001;
+		font-size: 40px;
 	}
 
 	nav {
 		width: 100%;
+	}
+
+	nav a {
+		font-size: 25px;
 	}
 
 	.links{
@@ -182,7 +184,7 @@
 		top: 0;
 		left: 0;
 		height: 100vh;
-		background-color: rgb(185 193 204);
+		background-color: rgba(185, 193, 204, 0.5);
 		flex-direction: column;
 		display: none;
 		transform: translateX(-100%);
@@ -210,24 +212,25 @@
 
 	
 	.middle a{
-		font-size: 2rem;
+		font-size: 60px;
 		justify-content: center;
+
 	}
 	
 
 	}
-	@media(min-width: 768px)and (max-width:1300px){
+	@media(min-width: 768px)and (max-width:992px){
 
 		.middle a{
-		font-size: 3rem;
+		font-size: 48px;
 		}
 
 		ul {
-			padding-top: 8rem;
+			padding-top: 180px;
 		}
 
 		li{
-			padding: .2rem;
+			padding: 12px;
 		}
 
 		.hambtn{
@@ -236,40 +239,43 @@
 
 		
 	}
-	@media(max-width: 400px){
 
-		.hambtn{
-			font-size: 1.2rem;
-		}
-		ul{
-			padding: 6rem 1rem;
-		}
-		nav a{
-			font-size: 1rem;
-		}
-
-	}
-
-
-	@media(max-width: 320px){
+	@media(min-width: 576px)and (max-width:767px){
 
 		ul{
-			padding: 5.2rem 1rem;
+			padding:125px 16px;
 		}
-
+		
 		li{
-			padding: .1rem;
+			padding: 5px;
 		}
+
 		.middle a {
-			font-size: 1.7rem;
+			font-size: 40px;
+		}
+
 	}
 
-	.hambtn{
-		font-size: .7rem;
-	}
-	.links a {
-		font-size: .7rem;
-	}
+	@media(max-width: 576px){
+
+		ul{
+				padding: 110px 16px;
+			}
+
+			li{
+				padding: 7px;
+			}
+			
+		.hambtn{
+			font-size: 12.8px;
+		}
+		.links a {
+			font-size: 12.8px;
+		}
+
+		.middle a{
+			font-size: 22px;
+		}
 }
 
 

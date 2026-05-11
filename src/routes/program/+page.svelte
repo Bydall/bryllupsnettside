@@ -25,13 +25,15 @@ import bilde from '$lib/images/bakgrunnsbilde.jpg';
 	</div>
 	
 	<div class="vielse">
+	<div class="center">
 		<h3>Vielse</h3>
 		<br>
-		<h4> 25 juli 2026</h4>
+		<p> 25. juli 2026</p>
 		<br>
 		<h4> Kl 14:00</h4>
 		<br>
-		<p> Sauråsbakken 20, 5131 Bergen, Norge</p>
+		<p class="sted"> Sauråsbakken 20, 5131 Bergen, Norge</p>
+		</div>
 	</div>
 </div>
 
@@ -39,21 +41,21 @@ import bilde from '$lib/images/bakgrunnsbilde.jpg';
 <div class="heia">
 
 		<div class="vielse">
+			<div class="center">
 				<h3>Festen</h3>
 				<br>
-				<h4> 25 juli 2026</h4>
+				<p> 25. juli 2026</p>
 				<br>
 				<h4> Kl 15:30 - 01:00</h4>
 				<br>
-				<p> Olderkjerret 6, 5108 Hordvik, Norge</p>
+				<p class="sted"> Olderkjerret 6, 5108 Hordvik, Norge</p>
 			</div>
+		</div>
 	<div class="vb">
 		<div class="festbilde"></div>
 	</div>
 
 </div>
-
-
 
 </div>
 
@@ -67,33 +69,52 @@ import bilde from '$lib/images/bakgrunnsbilde.jpg';
 		display: block;
 	}
 
-	h1, h3,h4, p {
-		color: rgb(0,51,25)
+	h3,h4, p {
+		font-weight: 200;
+		display: inline-block;
 	}
 	h1 {
 		text-align: left;
+		font-size: 30px;
+		font-weight: bolder;
 		
 	}
 
 	h3{
-	font-size: 3rem;
-	display: inline-block;
+	font-size: 36px;
+	padding: 5px 20px 5px 20px;
+	margin: 0px;
+	margin-bottom: 8px;
 	}
 	h4{
-		font-size: 2rem;
+		font-size: 25.2px;
 		text-align: center;
+		padding: 5px 20px 5px 20px;
+		margin: 0px;
+		margin-top: 5px;
 	}
 
 	p {
 		text-align: center;
-		font-size: 2rem;
+		font-size: 22.5px;
+		padding: 5px 20px 5px 20px;
+		margin-top: 16px;
+		margin-bottom: 0px;
 		
 		
+	}
+	.center{
+		text-align: center;
+	}
+	.sted{
+		font-size: 14.4px;
+		margin-top: 4px;
 	}
 
 	.text-column{
 		text-align: left;
 		padding: 15px;
+		font-weight: bolder;
 	}
 	
 	.vielsebilde{
@@ -106,14 +127,14 @@ import bilde from '$lib/images/bakgrunnsbilde.jpg';
 		
 	}
 
-	.vielse, .hotellrom{
+	.vielse{
 		width: 50%;
 		display: flex;
-		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		padding: 15px;
-		text-align: center;
+		padding-bottom: 100px;
+		
 	}
 
 	.festbilde{
@@ -137,11 +158,28 @@ import bilde from '$lib/images/bakgrunnsbilde.jpg';
 			width: 100%;
 		}
 
-		h1, h3, h4{
-			font-size: 1.7rem;
+		h1{
+			font-size: 17.1px;
+		} 
+		
+		h4{
+			font-size: 17.1px;
+			margin-top: 0px;
+		}
+
+		 h3{
+			font-size: 19.8px;
+			margin-bottom: 0px;
+		 } 
+		 
+		.sted{
+			font-size: 12.6px;
+			margin-top: 0px;
+			margin-bottom: 5px;
 		}
 			p{
-				font-size:1.5rem
+				font-size: 14.4px;
+				margin-top: 0px;
 		}
 
 	}
