@@ -183,7 +183,7 @@
 		top: 0;
 		left: 0;
 		height: 100vh;
-		background-color: rgba(185, 193, 204,0.5);
+		background-color: rgb(185, 193, 204);
 		flex-direction: column;
 		display: none;
 		transform: translateX(-100%);
@@ -253,6 +253,10 @@
 
 	@media(max-width: 576px){
 
+		nav{
+			align-items: baseline;
+		}
+
 		ul{
 				padding: 150px 16px;
 			}
@@ -273,6 +277,9 @@
 		.middle{
 			position: relative;
 			width: 100%;
+			left:unset;
+			transform: none;
+		
 		}
 
 		.middle a{

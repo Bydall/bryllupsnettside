@@ -28,6 +28,7 @@
 		width: 100%;
 		font-family: 'Alex Brush';
 		font-size: 32px;
+		font-variant-numeric: tabular-nums;
 	}
 
 	@media(min-width: 768px) and (max-width:992px){
@@ -44,7 +45,7 @@
 
 	@media(max-width:576px){
 		h1{
-			font-size: 20px;
+			font-size: 14px;
 		}
 	}
 

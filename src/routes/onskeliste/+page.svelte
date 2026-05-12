@@ -45,7 +45,7 @@
 
 h1{
 	text-align: left;
-	padding-left: 3rem;
+	padding-left: 2.5rem;
 	width: 20%;
 }
 
@@ -63,16 +63,14 @@ a {
 	justify-content: center;
 	font-size: 1.2rem;
 	text-align: center;
-	margin: 2rem;
+	margin: 1.5rem;
 	padding: 1rem 1rem;
 	border: none;
     border-radius: 5px;
     cursor: pointer;
-	width: 20%;
-	height: 100%;
+	width: 25%;
 	box-sizing: border-box;
-	min-height: 70px;
-
+	height: 50px;
 } 
 
 .lists{
@@ -81,6 +79,7 @@ a {
 	justify-content: center;
 	flex-direction: column;
 	margin: 1rem;
+	margin-top: 6rem;
 	width: 100%;
 
 }
@@ -110,7 +109,7 @@ a {
 	display:flex;
 	flex-direction: column;
 	margin: 0px auto;
-	padding-top: 1%;
+	padding-top: 5%;
 	padding-left: 15px;
 	width: 100%;
 	
@@ -133,20 +132,25 @@ a {
 
 	
 	.text-column{
-		padding-top: 1%;
+		padding-top: 10%;
 		margin-bottom: 140px;
 	}
 	
 	a{
 		margin:20px;
 		padding: 20px;
-		width: 20%;
+		width: 30%;
 		font-size: 16.2px;
 		text-align: center;
 	}
 
 	h1{
 		padding-left: 35px;
+	}
+
+	.lists{
+		margin-top: 3rem;
+
 	}
 	p{
 		font-size: 16.2px;
@@ -158,19 +162,24 @@ a {
 
 	
 	.text-column{
-		padding-top: 5%;
+		padding-top: 9%;
+	}
+
+	.lists{
+		margin-top: 8%;
 	}
 	
 	a{
-		margin:20px;
+		margin:10px;
 		padding: 20px;
-		width: 25%;
+		width: 32%;
+		height:20px;
 		font-size: 16.2px;
 		text-align: center;
 	}
 
 	h1{
-		padding-left: 2.2rem;
+		padding-left: 4%;
 	}
 	
 	p{
@@ -180,7 +189,9 @@ a {
  }
 
 
-	@media (max-width: 576px) {
+ 
+
+@media (max-width: 576px) {
 		
 		.lists{
 			margin:0px;
@@ -203,7 +214,7 @@ a {
 
 		.text-column{
 			padding: 15px;
-			margin-top: 10%;
+			margin-top: 10svh;
 		}
 
 
@@ -218,6 +229,17 @@ a {
 				
 			font-size: 11px;
 			text-align: center;
+		}
+	}
+
+	@media (max-height: 500px) and (orientation: landscape){
+
+		.text-column{
+			padding-top:2svh;
+		}
+		
+		.lists{
+			margin-top: 1%;
 		}
 	}
 
