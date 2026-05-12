@@ -44,8 +44,9 @@
 }
 
 h1{
-	text-align: center;
-	width: 25%;
+	text-align: left;
+	padding-left: 3rem;
+	width: 20%;
 }
 
 p{
@@ -57,10 +58,11 @@ p{
 }
 
 a {
-	
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 1.2rem;
-	display: block;
+	text-align: center;
 	margin: 2rem;
 	padding: 1rem 1rem;
 	border: none;
@@ -68,6 +70,8 @@ a {
     cursor: pointer;
 	width: 20%;
 	height: 100%;
+	box-sizing: border-box;
+	min-height: 70px;
 
 } 
 
@@ -106,7 +110,7 @@ a {
 	display:flex;
 	flex-direction: column;
 	margin: 0px auto;
-	padding-top: 100px;
+	padding-top: 1%;
 	padding-left: 15px;
 	width: 100%;
 	
@@ -117,7 +121,6 @@ a {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100vw;
 	height: 25%;
-	
 	position: absolute;
 	bottom:0;
 	left:0;
@@ -130,7 +133,7 @@ a {
 
 	
 	.text-column{
-		padding-top: 120px;
+		padding-top: 1%;
 		margin-bottom: 140px;
 	}
 	
@@ -142,7 +145,9 @@ a {
 		text-align: center;
 	}
 
-
+	h1{
+		padding-left: 35px;
+	}
 	p{
 		font-size: 16.2px;
 	}
@@ -153,8 +158,7 @@ a {
 
 	
 	.text-column{
-		padding-top: 120px;
-		margin-bottom: 240px;
+		padding-top: 5%;
 	}
 	
 	a{
@@ -165,7 +169,10 @@ a {
 		text-align: center;
 	}
 
-
+	h1{
+		padding-left: 2.2rem;
+	}
+	
 	p{
 		font-size: 16.2px;
 	}
@@ -184,36 +191,32 @@ a {
 
 		}
 		a{
-			flex: 1;
 			padding: 20px;
 			margin: 10px;
 			border: none;
     		border-radius: 5px;
     		cursor: pointer;
-			width: 100%;
-			font-size: 12.8px;
+			width: 33%;
+			font-size: 11px;
 
 		}
 
 		.text-column{
 			padding: 15px;
-			margin-top: 140px;
-			margin-bottom: 270px;
+			margin-top: 10%;
 		}
 
-		.christiania{
-			padding:10.98px;
-		}
 
 		.gavetekst{
 			margin-top: 20px;
 		}
 		h1{
-			align-items: left;
-		}
+		padding-left: 0.1%
+	}
+
 		p{
 				
-			font-size: 12.8px;
+			font-size: 11px;
 			text-align: center;
 		}
 	}

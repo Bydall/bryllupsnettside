@@ -37,9 +37,15 @@
 
 <style>
 
+#Historie{
+	display: flex;
+	align-items: center;
+}
 .text-column{
 	display: flex;
 	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 
@@ -59,18 +65,14 @@
 		max-width: 1100px;
 		box-sizing: border-box;
 		margin: 0px auto;
+		align-items: center;
+		height:100vh;
 	}
 
 	h1 {
 		padding: 15px;
 		text-align: left;
 		
-	}
-
-	h3{
-	font-size: 36px;
-	display: inline-block;
-	padding-right: 50px;
 	}
 
 	p {
@@ -87,15 +89,6 @@
 		width: 100%;
 	}
 
-	.hotellrom{
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 15px;
-		text-align: center;
-	}
 
 	.historiebilde{
 		width: 100%;
@@ -113,12 +106,30 @@
 	}
 
 	@media(min-width:768px) and (max-width:992px){
-		h3{
-			font-size: 28.8px;
+		
+		.vb{
+			display: flex;
+			padding: 0px;
 		}
+		
 		p{
 			font-size: 16.2px;
 		}
+	}
+
+	@media(min-width:576px) and (max-width:768px){
+
+		.heia{
+			display: flex;
+			width: 100%;
+			align-items: center;
+		}
+
+		.vb{
+			display: flex;
+			padding:0px;
+		}
+
 	}
 
 	@media(max-width: 576px){
@@ -129,18 +140,11 @@
 			order: -1;
 			width: 100%;
 		}
-		.hotellrom{
-			padding-bottom: 0px;
-			width: 100%;
-		}
+
 		h1{
 			font-size: 19.8px;
 		}
 
-		 h3{
-			font-size: 17.2px;
-			padding: 0;
-		}
 			p{
 				font-size: 12.8px;
 				line-height: 24px;
