@@ -21,7 +21,7 @@
 	
 	<div class="historie">
 		<p class="hotellromtekst"> 
-			Vi møttes for første gang på julebordet til 'Unge Voksne' i Betlehem desember 2024.
+			Vi møttes for første gang på julebordet til 'Unge Voksne' i Betlehem desember 2023.
 			Håvard spurte Mathilde om hun hadde noen anbefalinger blant kakene, og hun svarte: "Sjokoladekaken kan anbefales."
 			Fire måneder senere spurte Håvard Mathilde ut på date - resten er historie.
 			<br>
